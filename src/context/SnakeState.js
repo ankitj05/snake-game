@@ -23,7 +23,6 @@ const SnakeState = (props) => {
         snakeBoxes: [[0, 0], [4, 0]],
         food: generateRandom(),
         direction: "RIGHT",
-        score: 0
     }
 
     const [state, dispatch] = useReducer(SnakeReducer, initialState)
