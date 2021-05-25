@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import Board from './components/Board'
+import Food from './components/Food'
+import SnakeState from './context/SnakeState'
+import Score from './components/Score'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SnakeState>
+      <div className='App'>
+        <Score />
+        <div className="board">
+          <Board />
+          <Food />
+        </div >
+      </div>
+    </SnakeState>
   );
 }
 

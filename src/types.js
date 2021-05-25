@@ -1,0 +1,5 @@
+export const UPDATE_SNAKE = 'UPDATE_SNAKE'
+export const UPDATE_DIRECTION = 'UPDATE_DIRECTION'
+export const UPDATE_FOOD = 'UPDATE_FOOD'
+export const RESET = 'RESET'
+export const ADD_SNAKE_BOX = 'ADD_SNAKE_BOX'
